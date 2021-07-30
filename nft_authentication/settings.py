@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-bp2cw@fe00=zd^xz6v-6g1h$7#)e!oqxhq_@(0hc366)6v&lv_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -41,6 +41,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'nft_authentication.urls'
@@ -183,3 +184,8 @@ DJOSER = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.UserAccount'
+
+import dj_database_url
+
+prod_db=dj_database_url.config(conn_max_age=500)
+DATABASES['default']x.update(prod_db)

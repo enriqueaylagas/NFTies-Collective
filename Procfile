@@ -1,0 +1,1 @@
+web: gunicorn nft_authentication.wsgi --log-file -

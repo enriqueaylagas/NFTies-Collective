@@ -1,4 +1,4 @@
-#!/Users/enriqueaylagas/Desktop/nft-project/nft-backend-main/venv/bin/python3
+#!/Users/enriqueaylagas/Desktop/nft-project/nft-backend-main/venv/bin/python
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
