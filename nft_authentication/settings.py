@@ -126,9 +126,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-CORS_ORIGIN_WHITELIST = [
-    ' http://localhost:3000/', 'https://evening-thicket-01614.herokuapp.com/','evening-thicket-01614.herokuapp.com','https://evening-thicket-01614.herokuapp.com','https://nftauthentication.herokuapp.com'
-]
+CORS_ORIGIN_WHITELIST = ['*']
 
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR,'build/static')
