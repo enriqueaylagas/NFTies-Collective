@@ -16,7 +16,15 @@ SECRET_KEY = 'django-insecure-bp2cw@fe00=zd^xz6v-6g1h$7#)e!oqxhq_@(0hc366)6v&lv_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://evening-thicket-01614.herokuapp.com", "localhost","127.0.0.1",'evening-thicket-01614.herokuapp.com','https://evening-thicket-01614.herokuapp.com/']
+ALLOWED_HOSTS = [
+    "https://evening-thicket-01614.herokuapp.com",
+    "localhost",
+    '127.0.0.1',
+    'evening-thicket-01614.herokuapp.com',
+    'https://evening-thicket-01614.herokuapp.com/',
+    'https://nftauthentication.herokuapp.com'
+]
+
 
 
 # Application definition
@@ -126,7 +134,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-CORS_ORIGIN_WHITELIST = ['*']
+CORS_ORIGIN_WHITELIST = [
+    ' http://localhost:3000/', 'https://evening-thicket-01614.herokuapp.com/','evening-thicket-01614.herokuapp.com','https://evening-thicket-01614.herokuapp.com','https://nftauthentication.herokuapp.com'
+]
 
 STATICFILES_DIRS = [
    os.path.join(BASE_DIR,'build/static')
