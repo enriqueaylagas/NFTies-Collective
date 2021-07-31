@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = [
-    ' http://localhost:3000/', 'https://evening-thicket-01614.herokuapp.com/','evening-thicket-01614.herokuapp.com','https://evening-thicket-01614.herokuapp.com'
+    ' http://localhost:3000/', 'https://evening-thicket-01614.herokuapp.com/','evening-thicket-01614.herokuapp.com','https://evening-thicket-01614.herokuapp.com','https://nftauthentication.herokuapp.com'
 ]
 
 STATICFILES_DIRS = [
